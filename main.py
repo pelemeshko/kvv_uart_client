@@ -7,6 +7,8 @@ from decimal import Decimal
 import serial
 import struct
 
+import numpy.fft as fft
+
 import log_file
 
 ser = serial.Serial()
@@ -29,6 +31,19 @@ fig = plt.figure()
 # log_file.close_log_file_1(file_handle_1)
 
 
+
+def input_file_path():
+    """Enter number of the selected channel; """
+    channel = 0
+    input_str1 = input('Enter number of the selected channel [1-14]:', )
+    try:
+        channel = input_str1
+        print('Selected channel is', channel)
+    except IndexError:
+        print('Error!')
+    return channel
+
+
 def Bytes_to_NormBytes(data):
     buf = []
     for i in data:
@@ -37,18 +52,19 @@ def Bytes_to_NormBytes(data):
     return buf
 
 
-def Get_oscillogram():
+def Get_oscillogram(channel):
     data_list = []
     points = []
     i = 0
-    Get_oscillogram_com = [0x41, 0x01]
+    Get_oscillogram_com = [0x41, int(channel)]
     ser.write(Get_oscillogram_com)
     #print('\nGet_oscillogram_com is sended,\t', 'time =', time.strftime("%Y_%m_%d %H-%M-%S "))
     output_data = ser.read(2048)
     #print(Bytes_to_NormBytes(output_data))
     while i < 2048:
         data_list.append(struct.unpack('<h', output_data[i:i + 2])[0])
-        points.append(i)
+        """points in ms; """
+        points.append(i*81.92/2048)
         #print(i, Bytes_to_NormBytes(output_data)[i:i + 2], struct.unpack('<h', output_data[i:i + 2])[0])
         i = i + 2
     return data_list, points
@@ -60,36 +76,20 @@ def Plot(data_Y, data_X):
     ax = fig.add_subplot(111)
     ax.plot(data_X, data_Y, color='black', linewidth=1)
     ax.grid(True)
-    ax.set_xlabel('x-axis')
+    ax.set_xlabel('time, ms')
     ax.set_ylabel('y-axis')
-    ax.set_xlim([0, 2048])
+    ax.set_xlim([0, 81.92])
     ax.set_ylim([0, 4200])
     #ax.scatter(data_X, data_Y, color='blue', marker='.')
     plt.pause(0.05)
     #plt.show()
 
 
-
-
-def Plot2():
-    x = np.linspace(0, 6 * np.pi, 100)
-    y = np.sin(x)
-    # You probably won't need this if you're embedding things in a tkinter plot...
-    plt.ion()
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    line1, = ax.plot(x, y, 'r-')  # Returns a tuple of line objects, thus the comma
-
-    for phase in np.linspace(0, 10 * np.pi, 500):
-        line1.set_ydata(np.sin(x + phase))
-        fig.canvas.draw()
-        fig.canvas.flush_events()
-
-
+Ch = input_file_path()
 while 1:
-    data, Ppoints = Get_oscillogram()
+    data, Ppoints = Get_oscillogram(Ch)
     Plot(data, Ppoints)
-    print(n)
+    print(n, 'freq is')
     n = n + 1
 
 ser.close()
