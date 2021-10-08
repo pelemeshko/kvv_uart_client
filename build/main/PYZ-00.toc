@@ -379,38 +379,6 @@
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\__init__.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging._structures',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.utils',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.__about__',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.six',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\six.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.markers',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.requirements',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging._compat',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
-   'PYMODULE'),
   ('pkg_resources._vendor.pyparsing',
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing.py',
@@ -447,17 +415,33 @@
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\win32\\lib\\netbios.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging',
+  ('pkg_resources._vendor.packaging.requirements',
    'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.version',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._structures',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.__about__',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
    'PYMODULE'),
   ('pkg_resources._vendor.packaging.specifiers',
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.version',
+  ('pkg_resources._vendor.packaging',
    'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
    'PYMODULE'),
   ('pkg_resources._vendor.appdirs',
    'c:\\users\\pelemeshko '
@@ -470,6 +454,22 @@
   ('win32com.shell',
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\win32comext\\shell\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.six',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\six.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.markers',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.utils',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._compat',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
    'PYMODULE'),
   ('__main__',
    'C:\\Users\\Pelemeshko '
@@ -947,6 +947,26 @@
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\__init__.py',
    'PYMODULE'),
+  ('setuptools._vendor.packaging._structures',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.utils',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.specifiers',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('setuptools._vendor',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.version',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
   ('setuptools._vendor.packaging.requirements',
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\requirements.py',
@@ -963,21 +983,17 @@
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\extern\\__init__.py',
    'PYMODULE'),
-  ('setuptools._vendor.pyparsing',
+  ('setuptools._vendor.packaging',
    'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\pyparsing.py',
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging.version',
+  ('setuptools._vendor.packaging.markers',
    'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging.specifiers',
+  ('setuptools._vendor.packaging.__about__',
    'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.utils',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py',
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__about__.py',
    'PYMODULE'),
   ('setuptools._vendor.packaging._compat',
    'c:\\users\\pelemeshko '
@@ -987,25 +1003,9 @@
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\six.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging.__about__',
+  ('setuptools._vendor.pyparsing',
    'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__about__.py',
-   'PYMODULE'),
-  ('setuptools._vendor',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging._structures',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.markers',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py',
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\setuptools\\_vendor\\pyparsing.py',
    'PYMODULE'),
   ('setuptools.msvc',
    'c:\\users\\pelemeshko '
@@ -1255,6 +1255,10 @@
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\_strptime.py',
    'PYMODULE'),
+  ('typing',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\typing.py',
+   'PYMODULE'),
   ('_py_abc',
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\_py_abc.py',
@@ -1262,10 +1266,6 @@
   ('stringprep',
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\stringprep.py',
-   'PYMODULE'),
-  ('typing',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\typing.py',
    'PYMODULE'),
   ('fnmatch',
    'c:\\users\\pelemeshko '
@@ -1374,6 +1374,14 @@
   ('platform',
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\platform.py',
+   'PYMODULE'),
+  ('token',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\token.py',
+   'PYMODULE'),
+  ('tokenize',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\tokenize.py',
    'PYMODULE'),
   ('urllib.parse',
    'c:\\users\\pelemeshko '
@@ -1643,18 +1651,6 @@
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\doctest.py',
    'PYMODULE'),
-  ('pprint',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\pprint.py',
-   'PYMODULE'),
-  ('pickle',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\pickle.py',
-   'PYMODULE'),
-  ('tracemalloc',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\tracemalloc.py',
-   'PYMODULE'),
   ('stat',
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\stat.py',
@@ -1695,10 +1691,6 @@
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\os.py',
    'PYMODULE'),
-  ('token',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\token.py',
-   'PYMODULE'),
   ('gettext',
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\gettext.py',
@@ -1715,84 +1707,24 @@
    'c:\\users\\pelemeshko '
    'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\argparse.py',
    'PYMODULE'),
-  ('tokenize',
+  ('pprint',
    'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\tokenize.py',
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\pprint.py',
+   'PYMODULE'),
+  ('pickle',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\pickle.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\tracemalloc.py',
    'PYMODULE'),
   ('log_file',
    'F:\\YandexDisk2\\YandexDisk\\OAI_NSU\\PycharmProjects\\kvv_uart_client\\log_file.py',
    'PYMODULE'),
-  ('struct',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\struct.py',
-   'PYMODULE'),
-  ('serial',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\serial\\__init__.py',
-   'PYMODULE'),
-  ('serial.serialjava',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\serial\\serialjava.py',
-   'PYMODULE'),
-  ('serial.serialposix',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\serial\\serialposix.py',
-   'PYMODULE'),
-  ('serial.serialwin32',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\serial\\serialwin32.py',
-   'PYMODULE'),
-  ('serial.win32',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\serial\\win32.py',
-   'PYMODULE'),
-  ('serial.serialcli',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\serial\\serialcli.py',
-   'PYMODULE'),
-  ('serial.serialutil',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\serial\\serialutil.py',
-   'PYMODULE'),
-  ('decimal',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\decimal.py',
-   'PYMODULE'),
-  ('_pydecimal',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\_pydecimal.py',
-   'PYMODULE'),
-  ('contextvars',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\contextvars.py',
-   'PYMODULE'),
-  ('datetime',
-   'c:\\users\\pelemeshko '
-   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\datetime.py',
-   'PYMODULE'),
-  ('matplotlib.pyplot',
+  ('numpy.fft',
    'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\matplotlib\\pyplot.py',
-   'PYMODULE'),
-  ('matplotlib.patheffects',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\matplotlib\\patheffects.py',
-   'PYMODULE'),
-  ('matplotlib.transforms',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\matplotlib\\transforms.py',
-   'PYMODULE'),
-  ('matplotlib.path',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\matplotlib\\path.py',
-   'PYMODULE'),
-  ('matplotlib.hatch',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\matplotlib\\hatch.py',
-   'PYMODULE'),
-  ('numpy.linalg',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\linalg\\__init__.py',
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\fft\\__init__.py',
    'PYMODULE'),
   ('numpy._pytesttester',
    'C:\\Users\\Pelemeshko '
@@ -2118,6 +2050,18 @@
    'C:\\Users\\Pelemeshko '
    'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\lib\\polynomial.py',
    'PYMODULE'),
+  ('numpy.linalg',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\linalg\\__init__.py',
+   'PYMODULE'),
+  ('numpy.linalg.linalg',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\linalg\\linalg.py',
+   'PYMODULE'),
+  ('numpy.linalg.info',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\linalg\\info.py',
+   'PYMODULE'),
   ('numpy.lib.scimath',
    'C:\\Users\\Pelemeshko '
    'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\lib\\scimath.py',
@@ -2161,18 +2105,6 @@
   ('numpy.dual',
    'C:\\Users\\Pelemeshko '
    'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\dual.py',
-   'PYMODULE'),
-  ('numpy.fft',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\fft\\__init__.py',
-   'PYMODULE'),
-  ('numpy.fft.helper',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\fft\\helper.py',
-   'PYMODULE'),
-  ('numpy.fft._pocketfft',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\fft\\_pocketfft.py',
    'PYMODULE'),
   ('numpy.lib.nanfunctions',
    'C:\\Users\\Pelemeshko '
@@ -2390,13 +2322,81 @@
    'C:\\Users\\Pelemeshko '
    'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\distutils\\__version__.py',
    'PYMODULE'),
-  ('numpy.linalg.linalg',
+  ('numpy.fft.helper',
    'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\linalg\\linalg.py',
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\fft\\helper.py',
    'PYMODULE'),
-  ('numpy.linalg.info',
+  ('numpy.fft._pocketfft',
    'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\linalg\\info.py',
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\fft\\_pocketfft.py',
+   'PYMODULE'),
+  ('struct',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\struct.py',
+   'PYMODULE'),
+  ('serial',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\serial\\__init__.py',
+   'PYMODULE'),
+  ('serial.serialjava',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\serial\\serialjava.py',
+   'PYMODULE'),
+  ('serial.serialposix',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\serial\\serialposix.py',
+   'PYMODULE'),
+  ('serial.serialwin32',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\serial\\serialwin32.py',
+   'PYMODULE'),
+  ('serial.win32',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\serial\\win32.py',
+   'PYMODULE'),
+  ('serial.serialcli',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\serial\\serialcli.py',
+   'PYMODULE'),
+  ('serial.serialutil',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\serial\\serialutil.py',
+   'PYMODULE'),
+  ('decimal',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\decimal.py',
+   'PYMODULE'),
+  ('_pydecimal',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\_pydecimal.py',
+   'PYMODULE'),
+  ('contextvars',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\contextvars.py',
+   'PYMODULE'),
+  ('datetime',
+   'c:\\users\\pelemeshko '
+   'anatolii\\appdata\\local\\programs\\python\\python37-32\\lib\\datetime.py',
+   'PYMODULE'),
+  ('matplotlib.pyplot',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\matplotlib\\pyplot.py',
+   'PYMODULE'),
+  ('matplotlib.patheffects',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\matplotlib\\patheffects.py',
+   'PYMODULE'),
+  ('matplotlib.transforms',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\matplotlib\\transforms.py',
+   'PYMODULE'),
+  ('matplotlib.path',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\matplotlib\\path.py',
+   'PYMODULE'),
+  ('matplotlib.hatch',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\matplotlib\\hatch.py',
    'PYMODULE'),
   ('matplotlib.backends',
    'C:\\Users\\Pelemeshko '
@@ -2594,61 +2594,25 @@
    'C:\\Users\\Pelemeshko '
    'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\PcdImagePlugin.py',
    'PYMODULE'),
+  ('PIL.WmfImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\WmfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XVThumbImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\XVThumbImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcoImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\IcoImagePlugin.py',
+   'PYMODULE'),
   ('PIL.CurImagePlugin',
    'C:\\Users\\Pelemeshko '
    'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\CurImagePlugin.py',
    'PYMODULE'),
-  ('PIL.IptcImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\IptcImagePlugin.py',
-   'PYMODULE'),
   ('PIL.WebPImagePlugin',
    'C:\\Users\\Pelemeshko '
    'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\WebPImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.ImImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\ImImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.SunImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\SunImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.IcnsImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\IcnsImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.McIdasImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\McIdasImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.SgiImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\SgiImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.FitsStubImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\FitsStubImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.TgaImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\TgaImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.FliImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\FliImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.MpoImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\MpoImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.ImtImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\ImtImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.BlpImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\BlpImagePlugin.py',
    'PYMODULE'),
   ('PIL.GribStubImagePlugin',
    'C:\\Users\\Pelemeshko '
@@ -2658,17 +2622,85 @@
    'C:\\Users\\Pelemeshko '
    'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\GbrImagePlugin.py',
    'PYMODULE'),
-  ('PIL.XbmImagePlugin',
+  ('PIL.DdsImagePlugin',
    'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\XbmImagePlugin.py',
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\DdsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FtexImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\FtexImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BlpImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\BlpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FpxImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\FpxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MicImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\MicImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FitsStubImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\FitsStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\ImImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Hdf5StubImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImtImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\ImtImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SunImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\SunImagePlugin.py',
    'PYMODULE'),
   ('PIL.BufrStubImagePlugin',
    'C:\\Users\\Pelemeshko '
    'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\BufrStubImagePlugin.py',
    'PYMODULE'),
-  ('PIL.PalmImagePlugin',
+  ('PIL.XbmImagePlugin',
    'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\PalmImagePlugin.py',
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\XbmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcnsImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\IcnsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpoImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\MpoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XpmImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\XpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpegImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\MpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DcxImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\DcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PsdImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\PsdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PixarImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\PixarImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcxImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\PcxImagePlugin.py',
    'PYMODULE'),
   ('PIL.PdfImagePlugin',
    'C:\\Users\\Pelemeshko '
@@ -2682,17 +2714,29 @@
    'C:\\Users\\Pelemeshko '
    'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\ImageSequence.py',
    'PYMODULE'),
-  ('PIL.PsdImagePlugin',
+  ('PIL.EpsImagePlugin',
    'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\PsdImagePlugin.py',
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\EpsImagePlugin.py',
    'PYMODULE'),
-  ('PIL.PixarImagePlugin',
+  ('PIL.FliImagePlugin',
    'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\PixarImagePlugin.py',
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\FliImagePlugin.py',
    'PYMODULE'),
-  ('PIL.XpmImagePlugin',
+  ('PIL.TgaImagePlugin',
    'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\XpmImagePlugin.py',
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\TgaImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MspImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\MspImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.McIdasImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\McIdasImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IptcImagePlugin',
+   'C:\\Users\\Pelemeshko '
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\IptcImagePlugin.py',
    'PYMODULE'),
   ('PIL.SpiderImagePlugin',
    'C:\\Users\\Pelemeshko '
@@ -2702,61 +2746,17 @@
    'C:\\Users\\Pelemeshko '
    'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\ImageTk.py',
    'PYMODULE'),
-  ('PIL.PcxImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\PcxImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.WmfImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\WmfImagePlugin.py',
-   'PYMODULE'),
   ('PIL.Jpeg2KImagePlugin',
    'C:\\Users\\Pelemeshko '
    'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
    'PYMODULE'),
-  ('PIL.EpsImagePlugin',
+  ('PIL.PalmImagePlugin',
    'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\EpsImagePlugin.py',
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\PalmImagePlugin.py',
    'PYMODULE'),
-  ('PIL.MpegImagePlugin',
+  ('PIL.SgiImagePlugin',
    'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\MpegImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.DdsImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\DdsImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.FpxImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\FpxImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.Hdf5StubImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.DcxImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\DcxImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.MspImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\MspImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.XVThumbImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\XVThumbImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.MicImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\MicImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.IcoImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\IcoImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.FtexImagePlugin',
-   'C:\\Users\\Pelemeshko '
-   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\FtexImagePlugin.py',
+   'Anatolii\\AppData\\Roaming\\Python\\Python37\\site-packages\\PIL\\SgiImagePlugin.py',
    'PYMODULE'),
   ('PIL.TiffImagePlugin',
    'C:\\Users\\Pelemeshko '
