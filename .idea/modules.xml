@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../SunSensor/ACDS_OM_Test_v1.1-master-4a82919eeafd3667b2ff8d1bb5555aebf6e5d955/.idea/200402_OM_Test.iml" filepath="$PROJECT_DIR$/../SunSensor/ACDS_OM_Test_v1.1-master-4a82919eeafd3667b2ff8d1bb5555aebf6e5d955/.idea/200402_OM_Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SunSensor/IR matrix/.idea/IR matrix.iml" filepath="$PROJECT_DIR$/../SunSensor/IR matrix/.idea/IR matrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SunSensor/SunSensor_CAN_interface/.idea/SunSensor_CAN_interface.iml" filepath="$PROJECT_DIR$/../SunSensor/SunSensor_CAN_interface/.idea/SunSensor_CAN_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../altair_ms_project-master/.idea/altair_ms_project-master.iml" filepath="$PROJECT_DIR$/../altair_ms_project-master/.idea/altair_ms_project-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../can_usb_client-master/.idea/can_usb_client-master.iml" filepath="$PROJECT_DIR$/../can_usb_client-master/.idea/can_usb_client-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/kvv_uart_client.iml" filepath="$PROJECT_DIR$/.idea/kvv_uart_client.iml" />
     </modules>
   </component>

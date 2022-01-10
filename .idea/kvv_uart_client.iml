@@ -3,7 +3,12 @@
   <component name="NewModuleRootManager">
     <WolframLanguageLevel version="12.0" />
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="can_usb_client-master" />
+    <orderEntry type="module" module-name="altair_ms_project-master" />
+    <orderEntry type="module" module-name="SunSensor_CAN_interface" />
+    <orderEntry type="module" module-name="200402_OM_Test" />
+    <orderEntry type="module" module-name="IR matrix" />
   </component>
 </module>
