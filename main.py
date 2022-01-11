@@ -20,16 +20,18 @@ ser.flushInput()  # очистка входного буфера
 ser.reset_output_buffer()
 ser.reset_input_buffer()
 
+
 n = 0
+Amax, Amin, Ampl = [], [], []
 fig = plt.figure()
 
 
 def input_file_path():
     """Enter number of the selected channel; """
     channel = 0
-    input_str1 = input('What channel is required? [0-13]:\n', )
+    input_str = input('What channel is required? [0-13]:\n', )
     try:
-        channel = input_str1
+        channel = input_str
         print('Selected channel is', channel)
     except IndexError:
         print('Error!')
@@ -89,6 +91,12 @@ def Get_oscillogram(channel):
     return data_list, points
 
 
+def CalcAmpl(data):
+    Amax = max(data)
+    Amin = min(data)
+    Ampl = Amax - Amin
+    return Amax, Amin, Ampl
+
 def Plot(data_Y, data_X):
     plt.ion()
     plt.clf()
@@ -106,12 +114,15 @@ def Plot(data_Y, data_X):
 
 Ch = input_file_path()
 flag_log = logging_permission()
-
 file_handle, log_dir = log_file.create_log_file(prefix="kvv_test", extension=".xls")
 
 while 1:
     data, Ppoints = Get_oscillogram(Ch)
     Plot(data, Ppoints)
+    Amax.append(CalcAmpl(data)[0])
+    Amin.append(CalcAmpl(data)[1])
+    Ampl.append(CalcAmpl(data)[2])
+
     while 5 < n < 10:
         if flag_log == 1:
             logging(data, Ppoints)
@@ -119,7 +130,13 @@ while 1:
         else:
             flag_log = 0
             n = n + 1
-    print(n, 'freq is')
+
+    if n > 5:
+        Amax.pop(0)
+        Amin.pop(0)
+        Ampl.pop(0)
+
+    print("n = %d\tMax = %.2f\tMin =%.2f\t Ampl = %.2f\n" % (n, np.mean(Amax), np.mean(Amin), np.mean(Ampl)))
     n = n + 1
 
 ser.close()
