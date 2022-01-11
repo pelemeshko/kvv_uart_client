@@ -1,13 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import datetime
-import time
-from decimal import Decimal
-
 import serial
 import struct
+from scipy.fft import fft, fftfreq
+from scipy.fft import rfft, rfftfreq
+from matplotlib import mlab, pyplot
 
-import numpy.fft as fft
 import log_file
 
 ser = serial.Serial()
@@ -20,10 +18,13 @@ ser.flushInput()  # очистка входного буфера
 ser.reset_output_buffer()
 ser.reset_input_buffer()
 
-
 n = 0
 Amax, Amin, Ampl = [], [], []
+
 fig = plt.figure()
+fig.set_figwidth(8)
+fig.set_figheight(8)
+
 
 
 def input_file_path():
@@ -97,19 +98,39 @@ def CalcAmpl(data):
     Ampl = Amax - Amin
     return Amax, Amin, Ampl
 
-def Plot(data_Y, data_X):
+
+def Plot(data_Y, data_X, ampl):
+    SAMPLE_RATE = 25000  # Гц
+    DURATION = 0.04096  # Секунды
+    N = 1024
+
+    yf = rfft(data_Y)
+    xf = rfftfreq(N, 1 / SAMPLE_RATE)
+
     plt.ion()
     plt.clf()
-    ax = fig.add_subplot(111)
+
+    ax = fig.add_subplot(211)
     ax.plot(data_X, data_Y, color='black', linewidth=1)
     ax.grid(True)
     ax.set_xlabel('time, ms')
     ax.set_ylabel('y-axis')
-    ax.set_xlim([0, 81.92])  # 25kHz, 2048 points
+    ax.set_xlim([0, 40.96])  # 25kHz, 1024 points
     ax.set_ylim([0, 4096])
+    ax.text(0, 4000, "Ampl = %.2f\n" % ampl, rotation=0, fontsize=20)
     # ax.scatter(data_X, data_Y, color='blue', marker='.')
+
+    ax1 = fig.add_subplot(212)
+    ax1.plot(xf, np.abs(yf), color='black', linewidth=1)
+    ax1.grid(True)
+    ax1.set_ylabel('dB')
+    ax1.set_xscale('log')
+    #ax1.set_yscale('log')
+    ax1.set_xlabel('freq, Hz')
+    ax1.set_xlim([0, 10000])  # 25kHz, 1024 points
+    ax1.set_ylim([0, 100000])
+
     plt.pause(0.0005)
-    # plt.show()
 
 
 Ch = input_file_path()
@@ -118,7 +139,7 @@ file_handle, log_dir = log_file.create_log_file(prefix="kvv_test", extension=".x
 
 while 1:
     data, Ppoints = Get_oscillogram(Ch)
-    Plot(data, Ppoints)
+    Plot(data, Ppoints, np.mean(Ampl))
     Amax.append(CalcAmpl(data)[0])
     Amin.append(CalcAmpl(data)[1])
     Ampl.append(CalcAmpl(data)[2])
