@@ -10,7 +10,7 @@ import log_file
 
 ser = serial.Serial()
 ser.baudrate = 115200
-ser.port = 'COM3'
+ser.port = 'COM15'
 ser.open()
 print(ser.name + ' is opened...')
 ser.flushOutput()  # очистка выходного буфера
@@ -47,11 +47,8 @@ def logging_permission():
         if input_str == 'y':
             flag = 1
             print('Go logging')
-        elif input_str == 'n':
-            flag = 0
-            print('No logging')
         else:
-            print('Error!')
+            print('No logging!')
     except IndexError:
         print('Error!')
     return flag
@@ -61,7 +58,7 @@ def logging(data_1=None, data_2=None):
     file = log_file.open_log_file(file_handle)
     i = 0
     while i < 1024:
-        file.write("%0.f\n" % data_1[i])
+        file.write("%2.f\t%2.f\n" % (data_1[i], data_2[i]))
         i = i + 1
     log_file.close_log_file(file_handle)
 
@@ -91,6 +88,11 @@ def Get_oscillogram(channel):
         i = i + 2
     return data_list, points
 
+def Start_test_vibration():
+    test_vibration = [0x54, 0x32, 0x28]
+    ser.write(test_vibration)
+    output_data = ser.read(13)
+    #print(output_data)
 
 def CalcAmpl(data):
     Amax = max(data)
@@ -100,7 +102,7 @@ def CalcAmpl(data):
 
 
 def Plot(data_Y, data_X, ampl):
-    SAMPLE_RATE = 25000  # Гц
+    SAMPLE_RATE = 12500  # Гц
     DURATION = 0.04096  # Секунды
     N = 1024
 
@@ -121,41 +123,38 @@ def Plot(data_Y, data_X, ampl):
     # ax.scatter(data_X, data_Y, color='blue', marker='.')
 
     ax1 = fig.add_subplot(212)
-    ax1.plot(xf, np.abs(yf), color='black', linewidth=1)
+    m = np.abs(yf)
+    ax1.plot(xf, m, color='black', linewidth=1)
     ax1.grid(True)
     ax1.set_ylabel('dB')
-    ax1.set_xscale('log')
+    #ax1.set_xscale('log')
     #ax1.set_yscale('log')
     ax1.set_xlabel('freq, Hz')
-    ax1.set_xlim([0, 10000])  # 25kHz, 1024 points
-    ax1.set_ylim([0, 100000])
+    ax1.set_xlim([0, 1000])  # 25kHz, 1024 points
+    ax1.set_ylim([0, 10000])
 
     plt.pause(0.0005)
-
+    return m
 
 Ch = input_file_path()
 flag_log = logging_permission()
 file_handle, log_dir = log_file.create_log_file(prefix="kvv_test", extension=".xls")
 
+
 while 1:
+
     data, Ppoints = Get_oscillogram(Ch)
-    Plot(data, Ppoints, np.mean(Ampl))
+    spec = Plot(data, Ppoints, np.mean(Ampl))
     Amax.append(CalcAmpl(data)[0])
     Amin.append(CalcAmpl(data)[1])
     Ampl.append(CalcAmpl(data)[2])
+    Start_test_vibration()
 
-    while 5 < n < 10:
+    if 5 < n < 100:
         if flag_log == 1:
             logging(data, Ppoints)
-            n = n + 1
         else:
             flag_log = 0
-            n = n + 1
-
-    if n > 5:
-        Amax.pop(0)
-        Amin.pop(0)
-        Ampl.pop(0)
 
     print("n = %d\tMax = %.2f\tMin =%.2f\t Ampl = %.2f\n" % (n, np.mean(Amax), np.mean(Amin), np.mean(Ampl)))
     n = n + 1
